@@ -67,7 +67,8 @@ img{
 }
 
 .header{
-    padding: 24px 0 230px;
+    padding-top: 24px;
+    padding-bottom: 230px;
     font-family: var(--mont);
     color: #ffffff;
 }
@@ -173,7 +174,8 @@ img{
 }
 
 .main{
-    padding: 42px 0 82px;
+    padding-top: 42px;
+    padding-bottom: 82px;
 }
 
 .services{
@@ -411,7 +413,8 @@ img{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 10px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-top: 1px solid #e5e5e5;
 }
 
