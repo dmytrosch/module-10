@@ -12,13 +12,13 @@
 }
 
 .main *::-moz-selection, 
-.footer *::-moz-selectiont{
+.footer *::-moz-selection{
     color: #ffffff;
     background-color: rgb(243,129,129);
 }
 
 .main *::selection,
-.footer *::selectiont{
+.footer *::selection{
     color: #ffffff;
     background-color: rgb(243,129,129);
 }
