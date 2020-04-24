@@ -523,9 +523,9 @@ img{
     .header-wrapper{
         background: url('../img/bgr-banner@2x.jpg'), 
                 -webkit-gradient( linear, left bottom, left top, from(rgb(252,227,138)), to(rgb(243,129,129)));
-    background: url('../img/bgr-banner.jpg@2x'), 
+    background: url('../img/bgr-banner@2x.jpg@'), 
                 -o-linear-gradient( bottom, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-    background: url('../img/bgr-banner.jpg@2x'), 
+    background: url('../img/bgr-banner@2x.jpg'), 
                 linear-gradient( 360deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
     }
 }
