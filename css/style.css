@@ -54,21 +54,16 @@ img{
 .header-wrapper{
     width: 100%;
     height: auto;
-    background: url('../img/bgr-banner.jpg'), 
-                -webkit-gradient( linear, left bottom, left top, from(rgb(252,227,138)), to(rgb(243,129,129)));
-    background: url('../img/bgr-banner.jpg'), 
-                -o-linear-gradient( bottom, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-    background: url('../img/bgr-banner.jpg'), 
-                linear-gradient( 360deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    background-image: url('../img/bgr-banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: overlay;
-    padding: 0 50px; 
 }
 
 .container{
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1300px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .header{
@@ -521,11 +516,7 @@ img{
 /* **********MEDIA********* */
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx){
     .header-wrapper{
-        background: url('../img/bgr-banner@2x.jpg'), 
-                -webkit-gradient( linear, left bottom, left top, from(rgb(252,227,138)), to(rgb(243,129,129)));
-    background: url('../img/bgr-banner@2x.jpg@'), 
-                -o-linear-gradient( bottom, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-    background: url('../img/bgr-banner@2x.jpg'), 
-                linear-gradient( 360deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    background-image: url('../img/bgr-banner@2x.jpg');
     }
+    
 }
