@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 :root{
     --mont: 'Montserrat', 'Arial', sans-serif;
     --roboto: 'Roboto', 'Arial', sans-serif;
@@ -9,6 +11,12 @@
     padding: 0;
 }
 
+.main *::-moz-selection, 
+.footer *::-moz-selectiont{
+    color: #ffffff;
+    background-color: rgb(243,129,129);
+}
+
 .main *::selection,
 .footer *::selectiont{
     color: #ffffff;
@@ -16,13 +24,15 @@
 }
 
 html{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 *, 
 *::after, 
 *::before{
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 }
 
 .list{
@@ -45,6 +55,10 @@ img{
     width: 100%;
     height: auto;
     background: url('../img/bgr-banner.jpg'), 
+                -webkit-gradient( linear, left bottom, left top, from(rgb(252,227,138)), to(rgb(243,129,129)));
+    background: url('../img/bgr-banner.jpg'), 
+                -o-linear-gradient( bottom, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    background: url('../img/bgr-banner.jpg'), 
                 linear-gradient( 360deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
     background-size: cover;
     background-repeat: no-repeat;
@@ -64,9 +78,15 @@ img{
 }
 
 .site-navigation{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 164px;
 }
 
@@ -77,14 +97,22 @@ img{
 
 .site-navigation__menu{
     width: 620px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .site-navigation__link{
     padding: 8px 0;
     border-bottom: 3px solid transparent;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
     text-transform: uppercase;
     font-weight: 400;
@@ -100,6 +128,8 @@ img{
     width: 18px;
     height: 18px;
     fill: #ffffff;
+    -webkit-transition: fill 0.2s ease-out;
+    -o-transition: fill 0.2s ease-out;
     transition: fill 0.2s ease-out;
 }
 
@@ -137,6 +167,8 @@ img{
     height: 40px;
     border: 3px solid #ffffff;
     margin: 0 auto;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
 }
 
@@ -154,9 +186,16 @@ img{
 }
 
 .main-section__title-main{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: var(--mont);
     font-weight: 700;
     font-size: 30px;
@@ -183,10 +222,16 @@ img{
 }
 
 .services__list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
     min-height: 250px;
 }
 
@@ -239,9 +284,14 @@ img{
 }
 
 .team__list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .team-card{
@@ -255,14 +305,28 @@ img{
     left: -10px;
     width: 380px;
     height: 470px;
+    background: -webkit-gradient( linear, left bottom, left top, from(rgba(252,227,138,.95)), to(rgba(243,129,129,.95)));
+    background: -o-linear-gradient( bottom, rgba(252,227,138,.95) 0%, rgba(243,129,129,.95) 100%);
     background: linear-gradient( to top, rgba(252,227,138,.95) 0%, rgba(243,129,129,.95) 100%);
-    box-shadow: 10px 10px #95e1d3;
+    -webkit-box-shadow: 10px 10px #95e1d3;
+            box-shadow: 10px 10px #95e1d3;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     opacity: 0;
     cursor: pointer;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
 
@@ -273,19 +337,31 @@ img{
 .card-overlay__socials-list{
     width: 228px;
     height: 56px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 
 .card-overlay__social{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 56px;
     height: 56px;
     cursor: pointer;
     background-color: #fce38a;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
 
@@ -297,6 +373,8 @@ img{
     width: 26px;
     height: 26px;
     fill: #f38181;
+    -webkit-transition: fill 0.3s ease-out;
+    -o-transition: fill 0.3s ease-out;
     transition: fill 0.3s ease-out;
 }
 
@@ -329,9 +407,15 @@ img{
 }
 
 .footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 10px 0px;
     border-top: 1px solid #e5e5e5;
 }
@@ -352,6 +436,8 @@ img{
 
 .mail-subscribe-block{
     width: 380px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -366,7 +452,29 @@ img{
     border: 1px solid #e7e7e7;
     padding-left: 12px;
     outline: none;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+}
+
+.mail-subscribe-block__email::-webkit-input-placeholder{
+    font-style: italic;
+    color: #cccccc;
+}
+
+.mail-subscribe-block__email::-moz-placeholder{
+    font-style: italic;
+    color: #cccccc;
+}
+
+.mail-subscribe-block__email:-ms-input-placeholder{
+    font-style: italic;
+    color: #cccccc;
+}
+
+.mail-subscribe-block__email::-ms-input-placeholder{
+    font-style: italic;
+    color: #cccccc;
 }
 
 .mail-subscribe-block__email::placeholder{
@@ -385,11 +493,15 @@ img{
     font-size: 14px;
     color: #ffffff;
     cursor: pointer;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
 
 .mail-subscribe-block__submit-button--active:active{
-    transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+            transform: translateY(2px);
 }
 
 .mail-subscribe-block__submit-button--active:focus{
@@ -407,7 +519,7 @@ img{
 
 
 /* **********MEDIA********* */
-@media (min-resolution: 192dpi), (min-resolution: 2dppx){
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx){
     .header-wrapper{
         background-image: url('../img/bgr-banner@2x.jpg');
     }
