@@ -36,7 +36,7 @@ html{
 }
 
 .list{
-list-style-type: none;
+    list-style-type: none;
 }
 
 .link{
@@ -521,6 +521,11 @@ img{
 /* **********MEDIA********* */
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx){
     .header-wrapper{
-        background-image: url('../img/bgr-banner@2x.jpg');
+        background: url('../img/bgr-banner@2x.jpg'), 
+                -webkit-gradient( linear, left bottom, left top, from(rgb(252,227,138)), to(rgb(243,129,129)));
+    background: url('../img/bgr-banner.jpg@2x'), 
+                -o-linear-gradient( bottom, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    background: url('../img/bgr-banner.jpg@2x'), 
+                linear-gradient( 360deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
     }
 }
