@@ -263,12 +263,6 @@ img{
     margin-right: 30px;
 }
 
-.clearfix::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .team__description{
     max-width: 950px;
     text-align: center;
